@@ -110,16 +110,15 @@ contract ClearingHouse is Ownable {
         emit TokensWrapped(token, receiver, amount);
     }
 
-    function withdraw(address token, uint256 amount, uint256 nonce, string sender, uint8 v, bytes32 r, bytes32 s) {
-        require((nonces[sender] < nonce), 'Invalid nonce!');
-        nonces[sender] = nonce;
+    function withdraw(address token, uint256 amount, uint256 nonce, uint8 v, bytes32 r, bytes32 s) {
+        require((nonces[msg.sender] < nonce), 'Invalid nonce!');
+        nonces[msg.sender] = nonce;
 
         bytes32 digest = keccak256(
             abi.encodePacked(
                 token,
                 amount,
                 nonce,
-                sender,
                 msg.sender
             )
         );
