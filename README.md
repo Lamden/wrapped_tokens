@@ -12,5 +12,7 @@ Challenges to address:<br/>
 Binance-Burgerswap<br/>
 https://burgerswap.org/<br/>
 https://www.bscscan.com/address/0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f#code<br/>
-Loki-Binance Bride<br/>
+Original - Fantom bnb bridge (less bloat):<br/>
+https://github.com/Fantom-foundation/bnbridge.exchange<br/>
+Loki Port - Loki-Binance Bride<br/>
 https://github.com/loki-project/loki-binance-bridge<br/>
