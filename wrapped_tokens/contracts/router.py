@@ -14,6 +14,7 @@ sniffer = ForeignVariable(contract='currency', variable='owner')
 supported_tokens = Hash()
 nonces = Hash(default_value=0)
 owner = Variable()
+proofs = Hash()
 
 HEX_BYTES = 64
 
@@ -62,7 +63,7 @@ def pack_int(i):
 
 
 @export
-def mint(ethereum_contract, amount):
+def mint(ethereum_contract, amount, lamden_wallet):
     assert ctx.caller == owner.get(), 'Only owner can call!'
     assert supported_tokens[ethereum_contract] is not None, 'Invalid Ethereum Token!'
 
@@ -76,7 +77,7 @@ def mint(ethereum_contract, amount):
 
     assert I.enforce_interface(token, token_interface), 'Invalid token interface!'
 
-    token.mint(amount=unpacked_amount, to=ctx.caller)
+    token.mint(amount=unpacked_amount, to=lamden_wallet)
 
 
 @export
@@ -115,3 +116,8 @@ def add_token(ethereum_contract, lamden_contract, decimals):
 
     supported_tokens[ethereum_contract] = lamden_contract
     supported_tokens[ethereum_contract, 'decimals'] = decimals
+
+@export
+def post_proof(hashed_abi, signed_abi):
+    assert ctx.caller == owner.get(), 'Only owner can call!'
+    proofs[hashed_abi] = signed_abi

@@ -11,7 +11,6 @@ ETH_NETWORK_CODE = 42
 ETH_NETWORK_STR = 'mainnet' if ETH_NETWORK_CODE == 1 else 'kovan'
 
 CLEARING_HOUSE_ADDRESS = '0x0'
-INFURA_KEY = 'abd941592ff140d39dc7af70957aae56'
 INFURA_BASE = f'https://{ETH_NETWORK_STR}.infura.io/v3/{INFURA_KEY}'
 
 ABI = json.load('abi.json')
