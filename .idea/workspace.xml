@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb608966-d94e-4537-bd06-5350b95db9c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrapped_tokens/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrapped_tokens/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +17,19 @@
     <session id="951903610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="5" />
           <entry key="json" value="1" />
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
           <entry key="sol" value="2" />
         </counts>
       </usages-collector>
@@ -38,87 +37,47 @@
         <counts>
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="5" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
           <entry key="Solidity file" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="121" />
-          <entry key="py" value="3251" />
+          <entry key="py" value="3358" />
           <entry key="sol" value="309" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="121" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="3251" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="3358" />
           <entry key="Solidity file" value="309" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43222144">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/eth/contracts/ClearingHouse.sol">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3315">
-                  <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrapped_tokens/server.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#14#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrapped_tokens/tests.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/router.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="55" selection-start-line="55" selection-end-line="55" />
-                  <folding>
-                    <marker date="1605743644364" expanded="true" signature="930:1216" ph="..." />
-                    <marker date="1605743644364" expanded="true" signature="1321:1326" ph="..." />
-                    <marker date="1605743644364" expanded="true" signature="1874:1879" ph="..." />
-                    <marker date="1605743644364" expanded="true" signature="2691:2696" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/router.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+              <folding>
+                <marker date="1618352968594" expanded="true" signature="946:1232" ph="..." />
+                <marker date="1618352968594" expanded="true" signature="1352:1357" ph="..." />
+                <marker date="1618352968594" expanded="true" signature="1908:1913" ph="..." />
+                <marker date="1618352968594" expanded="true" signature="2725:2730" ph="..." />
+                <marker date="1618352968594" expanded="true" signature="3298:3299" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,10 +165,17 @@
               <item name="wrapped_tokens" type="462c0819:PsiDirectoryNode" />
               <item name="wrapped_tokens" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wrapped_tokens" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wrapped_tokens" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapped_tokens" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,13 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606263837441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updates">
+      <created>1618352972387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618352972387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1043" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.011599512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28071928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push" />
-    <option name="LAST_COMMIT_MESSAGE" value="push" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ethereum_side/test/TestMetaCoin.sol" />
@@ -335,13 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/token.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eth/migrations/2_deploy_contracts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -356,10 +323,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eth/contracts/ClearingHouse.sol">
+    <entry file="file://$PROJECT_DIR$/wrapped_tokens/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -373,25 +343,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrapped_tokens/tests.py">
+    <entry file="file://$PROJECT_DIR$/eth/contracts/ClearingHouse.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="880">
+          <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="798">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
           <folding>
-            <marker date="1605743644364" expanded="true" signature="930:1216" ph="..." />
-            <marker date="1605743644364" expanded="true" signature="1321:1326" ph="..." />
-            <marker date="1605743644364" expanded="true" signature="1874:1879" ph="..." />
-            <marker date="1605743644364" expanded="true" signature="2691:2696" ph="..." />
+            <marker date="1618352968594" expanded="true" signature="946:1232" ph="..." />
+            <marker date="1618352968594" expanded="true" signature="1352:1357" ph="..." />
+            <marker date="1618352968594" expanded="true" signature="1908:1913" ph="..." />
+            <marker date="1618352968594" expanded="true" signature="2725:2730" ph="..." />
+            <marker date="1618352968594" expanded="true" signature="3298:3299" ph="..." />
           </folding>
         </state>
       </provider>

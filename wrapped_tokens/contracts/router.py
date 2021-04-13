@@ -98,7 +98,11 @@ def burn(ethereum_contract, ethereum_address, lamden_address, amount):
 
     nonces[ethereum_address] += 1
 
-    return packed_token + packed_amount + packed_nonce + packed_address
+    abi = packed_token + packed_amount + packed_nonce + packed_address
+
+    _hash = hashlib.sha3(abi)
+
+    return _hash
 
 
 @export
