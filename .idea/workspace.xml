@@ -17,12 +17,13 @@
     <session id="951903610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,16 +45,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="121" />
-          <entry key="py" value="3358" />
+          <entry key="py" value="3389" />
           <entry key="sol" value="309" />
-          <entry key="txt" value="11" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="121" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="3358" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="3389" />
           <entry key="Solidity file" value="309" />
         </counts>
       </usages-collector>
@@ -64,14 +65,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/router.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="513">
+              <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
               <folding>
-                <marker date="1618352968594" expanded="true" signature="946:1232" ph="..." />
-                <marker date="1618352968594" expanded="true" signature="1352:1357" ph="..." />
-                <marker date="1618352968594" expanded="true" signature="1908:1913" ph="..." />
-                <marker date="1618352968594" expanded="true" signature="2725:2730" ph="..." />
-                <marker date="1618352968594" expanded="true" signature="3298:3299" ph="..." />
+                <marker date="1618353373389" expanded="true" signature="946:1232" ph="..." />
+                <marker date="1618353373389" expanded="true" signature="1352:1357" ph="..." />
+                <marker date="1618353373389" expanded="true" signature="1908:1913" ph="..." />
+                <marker date="1618353373389" expanded="true" signature="2773:2778" ph="..." />
+                <marker date="1618353373389" expanded="true" signature="3346:3347" ph="..." />
               </folding>
             </state>
           </provider>
@@ -250,14 +251,20 @@
       <option name="project" value="LOCAL" />
       <updated>1618352972387</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hash">
+      <created>1618353376401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618353376401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1043" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28071928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2917083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="hash" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ethereum_side/test/TestMetaCoin.sol" />
@@ -327,9 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -337,9 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -359,14 +361,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrapped_tokens/contracts/router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="513">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
           <folding>
-            <marker date="1618352968594" expanded="true" signature="946:1232" ph="..." />
-            <marker date="1618352968594" expanded="true" signature="1352:1357" ph="..." />
-            <marker date="1618352968594" expanded="true" signature="1908:1913" ph="..." />
-            <marker date="1618352968594" expanded="true" signature="2725:2730" ph="..." />
-            <marker date="1618352968594" expanded="true" signature="3298:3299" ph="..." />
+            <marker date="1618353373389" expanded="true" signature="946:1232" ph="..." />
+            <marker date="1618353373389" expanded="true" signature="1352:1357" ph="..." />
+            <marker date="1618353373389" expanded="true" signature="1908:1913" ph="..." />
+            <marker date="1618353373389" expanded="true" signature="2773:2778" ph="..." />
+            <marker date="1618353373389" expanded="true" signature="3346:3347" ph="..." />
           </folding>
         </state>
       </provider>
