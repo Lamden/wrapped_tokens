@@ -3,13 +3,12 @@ owner = Variable()
 
 @construct
 def seed():
-    owner.set(ctx.caller)
+    owner.set("con_clearing_house_62")
 
 @export
 def mint(amount: float, to: str):
-    assert ctx.caller == owner.get(), 'Only owner can mint!'
+    assert ctx.caller == owner.get(), f'Only owner can mint! Current owner is {owner.get()}, Caller is {ctx.caller}'
     assert amount > 0, 'Cannot mint negative balances!'
-
     balances[to] += amount
 
 @export
@@ -28,8 +27,9 @@ def balance_of(account: str):
     return balances[account]
 
 @export
-def allowance(owner: str, spender: str):
-    return balances[owner, spender]
+def allowance(Owner: str, spender: str):
+    return balances[Owner, spender]
+
 
 @export
 def approve(amount: float, to: str):
@@ -38,6 +38,7 @@ def approve(amount: float, to: str):
     sender = ctx.caller
     balances[sender, to] += amount
     return balances[sender, to]
+
 
 @export
 def transfer_from(amount: float, to: str, main_account: str):
@@ -53,3 +54,4 @@ def transfer_from(amount: float, to: str, main_account: str):
     balances[main_account] -= amount
 
     balances[to] += amount
+

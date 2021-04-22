@@ -1,0 +1,24 @@
+{
+    "lamden": {
+        "contract": "con_clearing_house_0099",
+        "wallet": {
+            "sk": "74b977269d619f511ae692658be85477ed959a9d58f399670a349e622697f881",
+            "vk": "464938b51e6c1556f69e7f452fa330e7c50da5106e4fca2d5f06981b6de84eda"
+        },
+        "network": {
+            "hosts": [
+                "https://testnet-master-1.lamden.io"
+            ],
+            "name": "Lamden Testnet",
+            "type": "testnet",
+            "lamden": true,
+            "currencySymbol": "dTAU",
+            "blockExplorer": "https://testnet.lamden.io"
+        }
+    },
+    "eth": {
+        "privKey": "0617daa72f2a44536f58e34aaa641beb8a19933a392efd059bd7eeb7348999ca",
+        "contract_address": "0x42617d2D05d076EC95e0cbE8fCd3e01915501ae5",
+        "network": "wss://kovan.infura.io/ws/v3/63ded85a9a5442c6ae2b94c2e97fb8c4"
+    }
+}

@@ -1,4 +1,6 @@
-pragma solidity ^0.6.12;
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.3;
 
 library SafeMath {
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -57,7 +59,7 @@ contract Ownable {
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
-    constructor () public {
+    constructor () {
         _owner = msg.sender;
         emit OwnershipTransferred(address(0), msg.sender);
     }
@@ -96,12 +98,12 @@ contract ClearingHouse is Ownable {
     using SafeMath for uint256;
 
     mapping(address => bool) supportedTokens;
-    mapping(string => uint256) nonces;
+    mapping(address => uint256) nonces;
 
     // Double mapping as token address -> owner -> balance
     event TokensWrapped(address indexed token, string indexed receiver, uint256 indexed amount);
 
-    function deposit(address token, uint256 amount, string receiver) {
+    function deposit(address token, uint256 amount, string memory receiver) public {
         require(supportedTokens[token] == true, 'Unsupported token!');
 
         IERC20 tokenERC = IERC20(token);
@@ -110,34 +112,41 @@ contract ClearingHouse is Ownable {
         emit TokensWrapped(token, receiver, amount);
     }
 
-    function withdraw(address token, uint256 amount, uint256 nonce, uint8 v, bytes32 r, bytes32 s) {
-        require((nonces[msg.sender] < nonce), 'Invalid nonce!');
-        nonces[msg.sender] = nonce;
+    function hashEthMsg(bytes32 _messageHash) public pure returns (bytes32) {
+        return keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", _messageHash));
+    }
 
-        bytes32 digest = keccak256(
-            abi.encodePacked(
-                token,
-                amount,
-                nonce,
-                msg.sender
-            )
-        );
 
-        address recoveredAddress = ecrecover(digest, v, r, s);
-
-        require(recoveredAddress != address(0) && recoveredAddress == owner, 'Invalid Signature!');
-
-        IERC20 tokenERC = IERC20(token);
-
-        tokenERC.transfer(msg.sender, amount);
+    function hash(bytes memory x) public pure returns (bytes32) {
+        return keccak256(x);
+    }
+    
+    function encode(address token, uint256 amount, uint256 nonce, address sender) public pure returns (bytes memory) {
+                return abi.encode(
+                    token,
+                    amount,
+                    nonce,
+                    sender
+                );
+    }
+    
+    function withdraw(address token, uint256 amount, uint256 nonce, uint8 v, bytes32 r, bytes32 s) public {
+            bytes memory encoded = encode(token, amount, nonce, msg.sender);
+            bytes32 hashed = hash(encoded);
+            hashed = hashEthMsg(hashed);
+            address recoveredAddress = ecrecover(hashed, v, r, s);
+            require(recoveredAddress != address(0) && recoveredAddress == owner(), 'Invalid Signature!');
+            require(recoveredAddress != address(0) && recoveredAddress == owner(), 'Invalid Signature!');
+            IERC20 tokenERC = IERC20(token);
+            tokenERC.transfer(msg.sender, amount);
     }
 
     // Admin functions for adding and removing tokens from the wrapped token system
-    function addToken(address token) onlyOwner {
+    function addToken(address token) public onlyOwner {
         supportedTokens[token] = true;
     }
 
-    function removeToken(address token) onlyOwner {
+    function removeToken(address token) public onlyOwner {
         supportedTokens[token] = false;
     }
 }
@@ -194,7 +203,10 @@ contract MintableToken is IERC20 {
 
     function transferFrom(address sender, address recipient, uint256 amount) public virtual override returns (bool) {
         _transfer(sender, recipient, amount);
-        _approve(sender, msg.sender, _allowances[sender][msg.sender].sub(amount, "ERC20: transfer amount exceeds allowance"));
+        
+        uint256 currentAllowance = _allowances[sender][msg.sender];
+        require(currentAllowance >= amount, "ERC20: transfer amount exceeds allowance");
+        _approve(sender, msg.sender, currentAllowance - amount);
         return true;
     }
 
