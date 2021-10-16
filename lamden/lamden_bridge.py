@@ -68,7 +68,7 @@ def lamden_bridge():
 
 
     @export
-    def withdraw(amount: float, to: str)
+    def withdraw(amount: float, to: str):
         assert ctx.caller == owner.get(), 'Only the owner can call!'
         currency.transfer(amount=amount, to=to)
 
